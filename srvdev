@@ -1,10 +1,11 @@
 #!/bin/sh
 
-LISTENTO=0.0.0.0
+#LISTENTO=0.0.0.0
+LISTENTO="[::]"
 PORT=5555
 VERBOSE=2
 
 export DJANGO_DEVEL=1
 
-./manage.py runserver -v "${VERBOSE}" "${LISTENTO}:${PORT}"
+python ./manage.py runserver -v "${VERBOSE}" "${LISTENTO}:${PORT}"
 
