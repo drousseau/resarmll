@@ -1,6 +1,7 @@
 
+Interface de reservation pour l'organisation des RMLL
 
-Pre-requis
+## Pre-requis
 
   * Django 1.4 (? ; ne marche pas avec 1.6.x ; marku pdeprecated)
   * Module : cairo reportlab trml2pdf
@@ -8,10 +9,11 @@ Pre-requis
 
 Debian Wheezy : python-django python-cairo python-reportlab python-trml2pdf
 
-Configruation :
+## Configruation
+
   * fichier resarmll/settings_local.py
 
-Initialisation de la base :
+## Initialisation de la base
 
   * for m in auth contenttypes sessions sites messages staticfiles markup admin resautils resa compta account resaroom ; do python manage.py sql $m ; done > /tmp/resarmll.sql
   * donner le resarmll.sql a manger a la base
